@@ -1,0 +1,136 @@
+.header-top,
+.header-main {
+  border-bottom: 1px solid var(--off-white);
+}
+
+.header-top .container,
+.header-main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  gap: 2rem;
+}
+
+.social-container,
+.header-top-actions {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.social-link {
+  background: var(--off-white);
+  color: var(--gray-4);
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  display: flex;
+  border-radius: var(--border-radius-md);
+  transition: var(--transition-timing);
+  border-radius: 0.3rem;
+}
+
+.social-link:hover {
+  background: var(--pink);
+  color: var(--white);
+}
+
+.header-alert-news {
+  text-transform: uppercase;
+  color: var(--gray-2);
+  font-size: 0.8rem;
+}
+
+.header-top-actions select {
+  padding: 0.3rem;
+  border: none;
+  background: var(--off-white);
+  text-transform: uppercase;
+  color: var(--gray-2);
+}
+
+.header-main {
+  padding: 1.5rem 0;
+}
+
+.header-search-container {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 300px;
+}
+
+.header-search-container .search-field {
+  font-size: 0.9rem;
+  color: var(--gray-5);
+  border: 1px solid var(--off-white);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.search-field::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-btn {
+  background: var(--white);
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  color: var(--gray-5);
+  font-size: 1.2rem;
+  padding: 0 0.9rem;
+  transition: color var(--transition-timing);
+}
+
+.search-btn:hover {
+  color: var(--pink);
+}
+
+.header-user-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-user-actions .action-btn {
+  position: relative;
+  font-size: 2rem;
+  color: var(--gray-5);
+  padding: 5px;
+}
+
+.header-user-actions .count {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  background: var(--coral);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 20px;
+}
+
+@media (width <= 768px) {
+  .header-social-container,
+  .header-user-actions {
+    display: none;
+  }
+}
+
+@media (width <= 570px) {
+  .header-top .container,
+  .header-main .container {
+    gap: 1rem;
+  }
+  .header-main .container {
+    flex-direction: column;
+  }
+  .header-top-actions {
+    display: none;
+  }
+}
+
