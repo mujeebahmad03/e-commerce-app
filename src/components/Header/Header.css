@@ -115,7 +115,7 @@
 }
 
 @media (width <= 768px) {
-  .header-social-container,
+  .header-top .social-container,
   .header-user-actions {
     display: none;
   }

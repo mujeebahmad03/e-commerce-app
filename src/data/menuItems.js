@@ -99,7 +99,18 @@ export const subCategory = [
 export const bottomMenu = [
   {
     title: "Language",
-    subItems: ["English", "Espa&ntilde;ol", "Fren&ccedil;h"],
+    subItems: ["English", "Español", "Frençh"],
   },
   { title: "Currency", subItems: ["USD $", "EUR £"] },
+];
+
+export const productItems = [
+  { imgLink: "images/icons/dress.svg", title: "dress", total: 53, link: "#" },
+  { imgLink: "images/icons/coat.svg", title: "winter wear", total: 58, link: "#" },
+  { imgLink: "images/icons/glasses.svg", title: "glasses", total: 68, link: "#" },
+  { imgLink: "images/icons/shorts.svg", title: "shorts & jeans", total: "", link: "" },
+  { imgLink: "images/icons/tee.svg", title: "t-shirts", total: 35, link: "#" },
+  { imgLink: "images/icons/jacket.svg", title: "jacket", total: 16, link: "#" },
+  { imgLink: "images/icons/watch.svg", title: "watch", total: 27, link: "#" },
+  { imgLink: "images/icons/hat.svg", title: "hat & cap", total: 39, link: "#" },
 ];
