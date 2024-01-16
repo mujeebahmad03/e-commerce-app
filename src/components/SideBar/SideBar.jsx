@@ -1,11 +1,21 @@
+import { useDispatch, useSelector } from "react-redux";
 import "./SideBar.css";
 import { Rating } from "@smastrom/react-rating";
 import { category } from "../../data/menuItems";
-import { IoAddOutline, IoRemove } from "react-icons/io5";
+import { IoAddOutline, IoCloseOutline, IoRemove } from "react-icons/io5";
 import { useState } from "react";
+import { toggleCategoryMenu } from "../../slice/menuSlice";
 
 const SideBar = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+
+  const isCategoryMenuOpen = useSelector(
+    (state) => state.menu.isCategoryMenuOpen
+  );
+
+  const dispatch = useDispatch();
+
+  const closeCategoryMenu = () => dispatch(toggleCategoryMenu());
 
   const handleAccordionClick = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -25,13 +35,15 @@ const SideBar = () => {
   };
 
   return (
-    <div className="sidebar  has-scrollbar" data-mobile-menu>
+    <div
+      className={`sidebar  has-scrollbar ${isCategoryMenuOpen ? "active" : ""}`}
+    >
       <div className="sidebar-category">
         <div className="sidebar-top">
           <h2 className="sidebar-title">Category</h2>
 
-          <button className="sidebar-close-btn" data-mobile-menu-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
+          <button className="sidebar-close-btn" onClick={closeCategoryMenu}>
+            <IoCloseOutline />
           </button>
         </div>
 
@@ -70,7 +82,6 @@ const SideBar = () => {
                   }`}
                 >
                   {renderSubMenuItems(item.subItems)}
-
                 </ul>
               </li>
             );

@@ -4,13 +4,20 @@ import Accordion from "./Accordion";
 import SocialLinks from "../Header/SocialLinks";
 import { bottomMenu } from "../../data/menuItems";
 import { FaCaretLeft } from "react-icons/fa6";
-import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleNavMenu } from "../../slice/menuSlice";
 
-const MobileMenu = ({ showMenu, setShowMenu }) => {
+const MobileMenu = () => {
   const [state, setState] = useState({
     showAccordion: false,
     activeIndex: null,
   });
+
+  const dispatch = useDispatch();
+
+  const closeNavMenu = () => dispatch(toggleNavMenu());
+
+  const isNavMenuOpen = useSelector((state) => state.menu.isNavMenuOpen);
 
   const toggleAccordion = () =>
     setState({ ...state, showAccordion: !state.showAccordion });
@@ -21,8 +28,9 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
       activeIndex: state.activeIndex === index ? null : index,
     });
   };
+
   const navClassName = `mobile-navigation-menu has-scrollbar ${
-    showMenu ? "active" : ""
+    isNavMenuOpen ? "active" : ""
   }`;
 
   const renderSubMenuItems = (subItems) => {
@@ -63,7 +71,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
       <div className="menu-top">
         <h2 className="menu-title">Menu</h2>
 
-        <button className="menu-close-btn" onClick={() => setShowMenu(false)}>
+        <button className="menu-close-btn" onClick={closeNavMenu}>
           <IoCloseOutline />
         </button>
       </div>
@@ -112,11 +120,6 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
       </div>
     </nav>
   );
-};
-
-MobileMenu.propTypes = {
-  showMenu: PropTypes.bool.isRequired,
-  setShowMenu: PropTypes.func.isRequired,
 };
 
 export default MobileMenu;
