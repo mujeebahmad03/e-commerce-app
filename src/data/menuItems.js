@@ -137,3 +137,34 @@ export const productItems = [
   { imgLink: "images/icons/watch.svg", title: "watch", total: 27, link: "#" },
   { imgLink: "images/icons/hat.svg", title: "hat & cap", total: 39, link: "#" },
 ];
+
+export const products = [
+  {
+    imageUrl: "images/products/1.jpg",
+    title: "baby fabric shoes",
+    rating: 5,
+    originalPrice: 5.0,
+    discountedPrice: 4.0,
+  },
+  {
+    imageUrl: "images/products/2.jpg",
+    title: "men's hoodies t-shirt",
+    rating: 4.5,
+    originalPrice: 17.0,
+    discountedPrice: 7.0,
+  },
+  {
+    imageUrl: "images/products/3.jpg",
+    title: "girls t-shirt",
+    rating: 4,
+    originalPrice: 5.0,
+    discountedPrice: 3.0,
+  },
+  {
+    imageUrl: "images/products/4.jpg",
+    title: "woolen hat for men",
+    rating: 5,
+    originalPrice: 15.0,
+    discountedPrice: 12.0,
+  },
+];
