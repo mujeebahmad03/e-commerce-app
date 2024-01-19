@@ -1,9 +1,9 @@
-import { category } from "../../data/menuItems";
+import { categories } from "../../data/menuItems";
 
 const Categories = () => {
   return (
     <>
-      {category.map((subCategoryItem, index) => {
+      {categories.map((subCategoryItem, index) => {
         return (
           <ul key={index} className="dropdown-panel-list">
             <li className="list-items">

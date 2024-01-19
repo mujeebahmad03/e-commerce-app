@@ -5,7 +5,7 @@ import SocialLinks from "../Header/SocialLinks";
 import { bottomMenu } from "../../data/menuItems";
 import { FaCaretLeft } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleNavMenu } from "../../slice/menuSlice";
+import { toggleNavMenu } from "../../redux/slice/menuSlice";
 
 const MobileMenu = () => {
   const [state, setState] = useState({

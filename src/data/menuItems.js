@@ -5,13 +5,14 @@ export const menuItems = [
   { title: "Hot Offers", link: "#" },
 ];
 
-export const category = [
+export const categories = [
   {
     title: "Shoes",
     imgLink: "images/icons/shoes.svg",
     link: "#",
     subItems: [
       { title: "Casual", link: "#", stock: 300 },
+      { title: "Sport", link: "#", stock: 300 },
       { title: "Boots", link: "#", stock: 300 },
       { title: "Business", link: "#", stock: 300 },
       { title: "Sandals & Slippers", link: "#", stock: 300 },
@@ -138,7 +139,7 @@ export const productItems = [
   { imgLink: "images/icons/hat.svg", title: "hat & cap", total: 39, link: "#" },
 ];
 
-export const products = [
+export const bestSellerProducts = [
   {
     imageUrl: "images/products/1.jpg",
     title: "baby fabric shoes",
@@ -166,5 +167,206 @@ export const products = [
     rating: 5,
     originalPrice: 15.0,
     discountedPrice: 12.0,
+  },
+];
+
+export const newArrivals = [
+  {
+    imageUrl: "images/products/clothes-1.jpg",
+    title: "relaxed short full sleeve t-shirt",
+    rating: 5,
+    originalPrice: 45.0,
+    discountedPrice: 40.0,
+    category: { title: "men's clothing", link: "#" },
+  },
+  {
+    imageUrl: "images/products/clothes-2.jpg",
+    title: "girls pink embro design top",
+    rating: 4.5,
+    originalPrice: 70.0,
+    discountedPrice: 57.0,
+    category: { title: "women's top", link: "#" },
+  },
+  {
+    imageUrl: "images/products/clothes-3.jpg",
+    title: "black floral wrap midi skirt",
+    rating: 4,
+    originalPrice: 55.0,
+    discountedPrice: 50.0,
+    category: { title: "women's clothing", link: "#" },
+  },
+  {
+    imageUrl: "images/products/shirt-1.jpg",
+    title: "pure garment dyed cotton shirt",
+    rating: 5,
+    originalPrice: 68.0,
+    discountedPrice: 52.0,
+    category: { title: "Shirts & T-Shirts", link: "#" },
+  },
+  {
+    imageUrl: "images/products/jacket-5.jpg",
+    title: "men yarn fleece full-zip jacket",
+    rating: 5,
+    originalPrice: 65.0,
+    discountedPrice: 61.0,
+    category: { title: "Jacket & Hoodies", link: "#" },
+  },
+  {
+    imageUrl: "images/products/jacket-1.jpg",
+    title: "men's winter leathers jackets",
+    rating: 5,
+    originalPrice: 65.0,
+    discountedPrice: 52.0,
+    category: { title: "Jacket & Hoodies", link: "#" },
+  },
+  {
+    imageUrl: "images/products/jacket-3.jpg",
+    title: "men's winter leathers jackets",
+    rating: 5,
+    originalPrice: 75.0,
+    discountedPrice: 62.0,
+    category: { title: "Jacket & Hoodies", link: "#" },
+  },
+  {
+    imageUrl: "images/products/shorts-1.jpg",
+    title: "better basics french terry sweatshorts",
+    rating: 5,
+    originalPrice: 60.5,
+    discountedPrice: 40.5,
+    category: { title: "Shorts", link: "#" },
+  },
+];
+
+export const trending = [
+  {
+    imageUrl: "images/products/sports-1.jpg",
+    title: "running & trekking shoes - white",
+    rating: 5,
+    originalPrice: 45.0,
+    discountedPrice: 40.0,
+    category: { title: "Sports", link: "#" },
+  },
+  {
+    imageUrl: "images/products/sports-2.jpg",
+    title: "trekking & running shoes - black",
+    rating: 4.5,
+    originalPrice: 70.0,
+    discountedPrice: 57.0,
+    category: { title: "Sports", link: "#" },
+  },
+  {
+    imageUrl: "images/products/party-wear-1.jpg",
+    title: "women's party wear shoes",
+    rating: 4,
+    originalPrice: 55.0,
+    discountedPrice: 50.0,
+    category: { title: "Business", link: "#" },
+  },
+  {
+    imageUrl: "images/products/sports-3.jpg",
+    title: "sports claw women's shoes",
+    rating: 5,
+    originalPrice: 68.0,
+    discountedPrice: 52.0,
+    category: { title: "Sports", link: "#" },
+  },
+  {
+    imageUrl: "images/products/sports-6.jpg",
+    title: "air nike sneaker - white",
+    rating: 5,
+    originalPrice: 65.0,
+    discountedPrice: 61.0,
+    category: { title: "Casual", link: "#" },
+  },
+  {
+    imageUrl: "images/products/shoe-3.jpg",
+    title: "Boot With Suede Detail",
+    rating: 5,
+    originalPrice: 65.0,
+    discountedPrice: 52.0,
+    category: { title: "Boots", link: "#" },
+  },
+  {
+    imageUrl: "images/products/shoe-1.jpg",
+    title: "men's leather formal wear shoes",
+    rating: 5,
+    originalPrice: 75.0,
+    discountedPrice: 62.0,
+    category: { title: "Business", link: "#" },
+  },
+  {
+    imageUrl: "images/products/shoe-2.jpg",
+    title: "casual men's brown shoes",
+    rating: 5,
+    originalPrice: 60.5,
+    discountedPrice: 40.5,
+    category: { title: "Casual", link: "#" },
+  },
+];
+
+export const topRated = [
+  {
+    imageUrl: "images/products/watch-3.jpg",
+    title: "pocket watch",
+    rating: 5,
+    originalPrice: 45.0,
+    discountedPrice: 40.0,
+    category: { title: "Watches", link: "#" },
+  },
+  {
+    imageUrl: "images/products/jewellery-3.jpg",
+    title: "images/products/jewellery-3.jpg",
+    rating: 4.5,
+    originalPrice: 70.0,
+    discountedPrice: 57.0,
+    category: { title: "Necklaces", link: "#" },
+  },
+  {
+    imageUrl: "images/products/perfume.jpg",
+    title: "titan 100 ml women's perfume",
+    rating: 4,
+    originalPrice: 55.0,
+    discountedPrice: 50.0,
+    category: { title: "Fragrance", link: "#" },
+  },
+  {
+    imageUrl: "images/products/belt.jpg",
+    title: "men's leather reversible belt",
+    rating: 5,
+    originalPrice: 68.0,
+    discountedPrice: 52.0,
+    category: { title: "Belts", link: "#" },
+  },
+  {
+    imageUrl: "images/products/jewellery-2.jpg",
+    title: "platinum zircon classic ring",
+    rating: 5,
+    originalPrice: 65.0,
+    discountedPrice: 61.0,
+    category: { title: "Rings", link: "#" },
+  },
+  {
+    imageUrl: "images/products/watch-1.jpg",
+    title: "smart watche vital plus",
+    rating: 5,
+    originalPrice: 65.0,
+    discountedPrice: 52.0,
+    category: { title: "Watches", link: "#" },
+  },
+  {
+    imageUrl: "images/products/shampoo.jpg",
+    title: "shampoo conditioner packs",
+    rating: 5,
+    originalPrice: 75.0,
+    discountedPrice: 62.0,
+    category: { title: "Bath & Body", link: "#" },
+  },
+  {
+    imageUrl: "images/products/jewellery-1.jpg",
+    title: "rose gold peacock earrings",
+    rating: 5,
+    originalPrice: 60.5,
+    discountedPrice: 40.5,
+    category: { title: "Earrings", link: "#" },
   },
 ];

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoAddOutline, IoRemove } from "react-icons/io5";
-import { category } from "../../data/menuItems";
+import { categories } from "../../data/menuItems";
 import PropTypes from "prop-types";
 
 const Accordion = ({ showAccordion }) => {
@@ -16,7 +16,7 @@ const Accordion = ({ showAccordion }) => {
 
   return (
     <ul className={accordionClass}>
-      {category.map((subCategoryItem, index) => {
+      {categories.map((subCategoryItem, index) => {
         const isAccordionActive = activeAccordion === index;
 
         return (

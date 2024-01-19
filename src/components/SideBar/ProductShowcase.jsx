@@ -1,4 +1,4 @@
-import { products } from "../../data/menuItems";
+import { bestSellerProducts } from "../../data/menuItems";
 import Product from "./Product";
 
 const ProductShowcase = () => (
@@ -7,7 +7,7 @@ const ProductShowcase = () => (
 
     <div className="showcase-wrapper">
       <div className="showcase-container">
-        {products.map((product, index) => (
+        {bestSellerProducts.map((product, index) => (
           <Product key={index} {...product} />
         ))}
       </div>

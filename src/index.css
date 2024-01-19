@@ -47,7 +47,7 @@ html {
 
 a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 
 li {
@@ -63,7 +63,9 @@ button {
 
 /* .container { padding: 0 15px; } */
 
-.has-scrollbar { padding-bottom: 5px; }
+.has-scrollbar {
+  padding-bottom: 5px;
+}
 
 .has-scrollbar::-webkit-scrollbar {
   width: 12px; /* for vertical scroll */
@@ -76,13 +78,37 @@ button {
   border-radius: 20px;
 }
 
-.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 90%);
+}
 
-.has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 80%);
+}
 
 .container {
   width: 95%;
   margin: 0 auto;
+}
+
+.title {
+  color: var(--gray-3);
+  font-size: var(--fs-5);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--off-white);
+  margin-bottom: 30px;
+}
+
+.showcase-rating {
+  max-width: 100px;
+  display: flex;
+  align-items: center;
+  color: var(--yellowish-brown);
+  font-size: 13px;
+  padding: 4px 0;
 }
 
 @media (min-width: 480px) {
@@ -96,8 +122,8 @@ button {
     --fs-1: 2.375rem;
   }
   .container {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 750px;
+    margin: auto;
   }
 }
 
@@ -105,6 +131,22 @@ button {
   :root {
     --fs-1: 2.625rem;
     --fs-2: 1.125rem;
+  }
+
+  .container {
+    max-width: 980px;
+  }
+
+  .product-container .container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .product-box {
+    min-width: calc(75% - 15px);
   }
 }
 

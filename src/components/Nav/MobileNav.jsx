@@ -3,7 +3,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { IoHomeOutline, IoMenuOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { IoGridOutline } from "react-icons/io5";
-import { toggleCategoryMenu, toggleNavMenu } from "../../slice/menuSlice";
+import { toggleCategoryMenu, toggleNavMenu } from "../../redux/slice/menuSlice";
 
 const MobileNav = () => {
   const dispatch = useDispatch();

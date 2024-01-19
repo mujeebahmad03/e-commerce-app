@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./SideBar.css";
-import { category } from "../../data/menuItems";
+import { categories } from "../../data/menuItems";
 import { IoCloseOutline } from "react-icons/io5";
 import { useState } from "react";
-import { toggleCategoryMenu } from "../../slice/menuSlice";
+import { toggleCategoryMenu } from "../../redux/slice/menuSlice";
 import ProductShowcase from "./ProductShowcase";
 import SidebarAccordionMenu from "./SideBarAccordionMenu";
 
@@ -36,7 +36,7 @@ const SideBar = () => {
         </div>
 
         <ul className="sidebar-menu-category-list">
-          {category.map((item, index) => {
+          {categories.map((item, index) => {
             const isAccordionActive = activeIndex === index;
             return (
               <SidebarAccordionMenu
