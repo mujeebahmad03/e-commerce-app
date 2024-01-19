@@ -51,6 +51,7 @@ const Product = ({
 
       {status && (
         <>
+          <button className="add-cart-btn">add to cart</button>
           <ProductStatus {...status} />
           <CountdownTimer />
         </>
