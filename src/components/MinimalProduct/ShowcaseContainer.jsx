@@ -1,11 +1,11 @@
-import ProductShowcaseItem from "./ProductShowcaseItem";
+import Product from "../SideBar/Product";
 import PropTypes from "prop-types";
 
 const ShowcaseContainer = ({ products }) => {
   return (
     <div className="showcase-container">
       {products.map((product, index) => (
-        <ProductShowcaseItem key={index} {...product} />
+        <Product key={index} {...product} />
       ))}
     </div>
   );

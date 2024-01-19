@@ -370,3 +370,27 @@ export const topRated = [
     category: { title: "Earrings", link: "#" },
   },
 ];
+
+export const dealOfTheDay = [
+  {
+    bannerSrc: "images/products/shampoo.jpg",
+    title: "Shampoo, Conditioner & Facewash Packs",
+    rating: 3,
+    description:
+      "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor",
+    discountedPrice: 150.0,
+    originalPrice: 200.0,
+    status: { sold: 20, available: 40 },
+  },
+
+  {
+    bannerSrc: "images/products/jewellery-1.jpg",
+    title: "Rose Gold diamonds Earring",
+    rating: 3,
+    description:
+      "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor",
+    discountedPrice: 1990.0,
+    originalPrice: 2000.0,
+    status: { sold: 15, available: 40 },
+  },
+];

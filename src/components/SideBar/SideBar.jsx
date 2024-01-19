@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./SideBar.css";
-import { categories } from "../../data/menuItems";
+import { bestSellerProducts, categories } from "../../data/menuItems";
 import { IoCloseOutline } from "react-icons/io5";
 import { useState } from "react";
 import { toggleCategoryMenu } from "../../redux/slice/menuSlice";
-import ProductShowcase from "./ProductShowcase";
 import SidebarAccordionMenu from "./SideBarAccordionMenu";
+import ShowcaseWrapper from "../MinimalProduct/ShowcaseWrapper";
 
 const SideBar = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -50,7 +50,10 @@ const SideBar = () => {
         </ul>
       </div>
 
-      <ProductShowcase />
+      <ShowcaseWrapper
+        heading="Best seller"
+        showcaseData={bestSellerProducts}
+      />
     </aside>
   );
 };
