@@ -47,7 +47,6 @@ html {
 
 a {
   text-decoration: none;
-  display: block;
 }
 
 li {
@@ -61,6 +60,12 @@ button {
   cursor: pointer;
 }
 
+img,
+svg,
+button,
+a {
+  display: block;
+}
 /* .container { padding: 0 15px; } */
 
 .has-scrollbar {

@@ -394,3 +394,174 @@ export const dealOfTheDay = [
     status: { sold: 15, available: 40 },
   },
 ];
+
+export const productsData = [
+  {
+    id: 1,
+    imageObj: {
+      default: "images/products/jacket-3.jpg",
+      hover: "images/products/jacket-4.jpg",
+    },
+    category: { title: "jacket", link: "#" },
+    title: "Mens Winter Leathers Jackets",
+    rating: 4,
+    discountedPrice: 48.0,
+    originalPrice: 75.0,
+  },
+  {
+    id: 2,
+    imageObj: {
+      default: "images/products/shirt-1.jpg",
+      hover: "images/products/shirt-2.jpg",
+    },
+    category: { title: "shirt", link: "#" },
+    title: "Pure Garment Dyed Cotton Shirt",
+    rating: 4,
+    discountedPrice: 45.0,
+    originalPrice: 56.0,
+    label: {
+      title: "sale",
+      className: "angle black",
+    },
+  },
+  {
+    id: 3,
+    imageObj: {
+      default: "images/products/jacket-5.jpg",
+      hover: "images/products/jacket-6.jpg",
+    },
+    category: { title: "Jacket", link: "#" },
+    title: "MEN Yarn Fleece Full-Zip Jacket",
+    rating: 4,
+    discountedPrice: 58.0,
+    originalPrice: 65.0,
+  },
+  {
+    id: 4,
+    imageObj: {
+      default: "images/products/clothes-3.jpg",
+      hover: "images/products/clothes-4.jpg",
+    },
+    category: { title: "skirt", link: "#" },
+    title: "Black Floral Wrap Midi Skirt",
+    rating: 5,
+    discountedPrice: 25.0,
+    originalPrice: 35.0,
+    label: {
+      title: "new",
+      className: "angle pink",
+    },
+  },
+  {
+    id: 5,
+    imageObj: {
+      default: "images/products/shoe-2.jpg",
+      hover: "images/products/shoe-2_1.jpg",
+    },
+    category: { title: "casual", link: "#" },
+    title: "Casual Men's Brown shoes",
+    rating: 5,
+    discountedPrice: 99.0,
+    originalPrice: 105.0,
+  },
+  {
+    id: 6,
+    imageObj: {
+      default: "images/products/watch-3.jpg",
+      hover: "images/products/watch-4.jpg",
+    },
+    category: { title: "watches", link: "#" },
+    title: "Pocket Watch Leather Pouch",
+    rating: 4,
+    discountedPrice: 150.0,
+    originalPrice: 170.0,
+    label: {
+      title: "sale",
+      className: "angle black",
+    },
+  },
+  {
+    id: 7,
+    imageObj: {
+      default: "images/products/watch-1.jpg",
+      hover: "images/products/watch-2.jpg",
+    },
+    category: { title: "watches", link: "#" },
+    title: "Smart watche Vital Plus",
+    rating: 3.5,
+    discountedPrice: 100.0,
+    originalPrice: 120.0,
+  },
+  {
+    id: 8,
+    imageObj: {
+      default: "images/products/party-wear-1.jpg",
+      hover: "images/products/party-wear-2.jpg",
+    },
+    category: { title: "party wear", link: "#" },
+    title: "Womens Party Wear Shoes",
+    rating: 4,
+    discountedPrice: 25.0,
+    originalPrice: 30.0,
+    label: {
+      title: "sale",
+      className: "angle black",
+    },
+  },
+  {
+    id: 9,
+    imageObj: {
+      default: "images/products/jacket-1.jpg",
+      hover: "images/products/jacket-2.jpg",
+    },
+    category: { title: "jacket", link: "#" },
+    title: "Mens Winter Leathers Jackets",
+    rating: 3.5,
+    discountedPrice: 32.0,
+    originalPrice: 45.0,
+  },
+  {
+    id: 10,
+    imageObj: {
+      default: "images/products/sports-2.jpg",
+      hover: "images/products/sports-4.jpg",
+    },
+    category: { title: "sports", link: "#" },
+    title: "Trekking & Running Shoes - black",
+    rating: 4,
+    discountedPrice: 58.0,
+    originalPrice: 64.0,
+    label: {
+      title: "sale",
+      className: "angle black",
+    },
+  },
+  {
+    id: 11,
+    imageObj: {
+      default: "images/products/shoe-1.jpg",
+      hover: "images/products/shoe-1_1.jpg",
+    },
+    category: { title: "formal", link: "#" },
+    title: "Men's Leather Formal Wear shoes",
+    rating: 3.5,
+    discountedPrice: 50.0,
+    originalPrice: 65.0,
+  },
+  {
+    id: 12,
+    imageObj: {
+      default: "images/products/shorts-1.jpg",
+      hover: "images/products/shorts-2.jpg",
+    },
+    category: { title: "shorts", link: "#" },
+    title: "Better Basics French Terry Sweatshorts",
+    rating: 4,
+    discountedPrice: 78.0,
+    originalPrice: 85.0,
+    label: {
+      title: "sale",
+      className: "angle black",
+    },
+  },
+];
