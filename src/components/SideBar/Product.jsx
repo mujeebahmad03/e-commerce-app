@@ -75,7 +75,7 @@ Product.propTypes = {
   }),
   description: PropTypes.string,
   status: PropTypes.object,
-  label: PropTypes.string,
+  label: PropTypes.object,
   rating: PropTypes.number,
   originalPrice: PropTypes.number,
   discountedPrice: PropTypes.number,

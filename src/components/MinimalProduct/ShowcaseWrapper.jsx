@@ -7,12 +7,12 @@ const ShowcaseWrapper = ({
   featured,
   showcaseData,
 }) => {
-  const hasScrollbar = `${productCategory} ? "has-scrollbar" : ""`;
+  const hasScrollbar = productCategory ? "has-scrollbar" : "";
   return (
     <div className={featured ? "product-featured" : "product-showcase"}>
       {productCategory && <h2 className="title">{productCategory}</h2>}
       {heading && <h3 className="showcase-heading">{heading}</h3>}
-      <div className={`showcase-wrapper ${hasScrollbar}`}>
+      <div className={`wrapper ${hasScrollbar}`}>
         {featured ? (
           <>
             <ShowcaseContainer products={showcaseData.slice(0, 1)} />

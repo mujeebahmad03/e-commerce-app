@@ -2,13 +2,8 @@
   margin-bottom: 30px;
 }
 
-.product-featured .showcase-wrapper {
-  display: flex;
-  align-items: center;
+.product-featured .wrapper {
   gap: 20px;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
 }
 
 .product-featured .showcase-container {

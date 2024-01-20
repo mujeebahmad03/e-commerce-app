@@ -315,7 +315,7 @@ export const topRated = [
   },
   {
     imageUrl: "images/products/jewellery-3.jpg",
-    title: "images/products/jewellery-3.jpg",
+    title: "silver deer heart necklace",
     rating: 4.5,
     originalPrice: 70.0,
     discountedPrice: 57.0,
@@ -563,5 +563,29 @@ export const productsData = [
       title: "sale",
       className: "angle black",
     },
+  },
+];
+
+export const testimonialsData = [
+  {
+    imageSrc: "images/testimonial-1.jpg",
+    name: "Alan Doe",
+    title: "CEO & Founder Invision",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.",
+  },
+  {
+    imageSrc: "images/testimonial-1.jpg",
+    name: "Alan Doe",
+    title: "CEO & Founder Invision",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.",
+  },
+  {
+    imageSrc: "images/testimonial-1.jpg",
+    name: "Alan Doe",
+    title: "CEO & Founder Invision",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.",
   },
 ];

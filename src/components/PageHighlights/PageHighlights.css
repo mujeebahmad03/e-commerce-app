@@ -1,0 +1,27 @@
+.page-highlights {
+  margin-bottom: 50px;
+}
+
+@media (width >= 1024px) {
+  .page-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .testimonial,
+  .cta-container {
+    min-width: calc(50% - 15px);
+    width: calc(50% - 15px);
+    margin-bottom: 0;
+  }
+}
+
+@media (width >= 1200px) {
+  .testimonial,
+  .service {
+    min-width: calc(25% - 20px);
+    width: calc(25% - 20px);
+  }
+}

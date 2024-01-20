@@ -116,6 +116,15 @@ a {
   padding: 4px 0;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  
+}
+
 @media (min-width: 480px) {
   :root {
     --fs-1: 1.875rem;

@@ -27,7 +27,6 @@ const ProductBanner = ({
             className="product-img hover"
             width="300"
           />
-          {console.log(label)}
           {label ? (
             <p className={`showcase-badge ${label.className}`}>{label.title}</p>
           ) : (

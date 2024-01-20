@@ -3,7 +3,7 @@ const Banner = () => {
   return (
     <section className="banner">
       <div className="container">
-        <div className="slider-container has-scrollbar">
+        <div className="wrapper has-scrollbar">
           <div className="slider-item">
             <img
               src="images/banner-1.jpg"
