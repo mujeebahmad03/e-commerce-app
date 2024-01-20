@@ -6,12 +6,12 @@ import Products from "../components/Products/Products";
 
 export const Home = () => {
   return (
-    <>
+    <main>
       <Banner />
       <ProductSlider />
       <Products />
       <PageHighlights />
       <BlogList />
-    </>
+    </main>
   );
 };
