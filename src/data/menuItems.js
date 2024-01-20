@@ -589,3 +589,42 @@ export const testimonialsData = [
       "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.",
   },
 ];
+
+export const blogData = [
+  {
+    category: { title: "Fashion", link: "#" },
+    blog: {
+      title: "Clothes Retail KPIs 2021 Guide for Clothes Executives.",
+      link: "#",
+    },
+    metaData: { author: "Mr Admin", date: "Apr 06, 2022" },
+    imgSrc: "images/blog-1.jpg",
+  },
+  {
+    category: { title: "Clothes", link: "#" },
+    blog: {
+      title: "Curbside fashion Trends: How to Win the Pickup Battle.",
+      link: "#",
+    },
+    metaData: { author: "Mr Robin", date: "Jan 18, 2022" },
+    imgSrc: "images/blog-2.jpg",
+  },
+  {
+    category: { title: "Shoes", link: "#" },
+    blog: {
+      title: "EBT vendors: Claim Your Share of SNAP Online Revenue.",
+      link: "#",
+    },
+    metaData: { author: "Mr Selsa", date: "Feb 10, 2022" },
+    imgSrc: "images/blog-3.jpg",
+  },
+  {
+    category: { title: "Electronics", link: "#" },
+    blog: {
+      title: "Curbside fashion Trends: How to Win the Pickup Battle.",
+      link: "#",
+    },
+    metaData: { author: "Mr Pawar", date: "Mar 15, 2022" },
+    imgSrc: "images/blog-4.jpg",
+  },
+];
