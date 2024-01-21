@@ -4,7 +4,7 @@ import { bestSellerProducts, categories } from "../../data/menuItems";
 import { IoCloseOutline } from "react-icons/io5";
 import { useState } from "react";
 import { toggleCategoryMenu } from "../../redux/slice/menuSlice";
-import SidebarAccordionMenu from "./SideBarAccordionMenu";
+import SidebarAccordionMenu from "./SidebarAccordionMenu";
 import ShowcaseWrapper from "../MinimalProduct/ShowcaseWrapper";
 
 const SideBar = () => {
