@@ -91,10 +91,8 @@ a {
   background: hsl(0, 0%, 80%);
 }
 
-.container {
-  width: 95%;
-  margin: 0 auto;
-}
+.container { padding: 0 15px; }
+
 
 .title {
   color: var(--gray-3);

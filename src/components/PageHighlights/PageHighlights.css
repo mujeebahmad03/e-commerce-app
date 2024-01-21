@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    gap: 30px;
+    gap: 20px;
   }
 
   .testimonial,
