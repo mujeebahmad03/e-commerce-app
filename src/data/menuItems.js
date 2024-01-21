@@ -14,7 +14,7 @@ export const categories = [
       { title: "Casual", link: "#", stock: 300 },
       { title: "Sport", link: "#", stock: 300 },
       { title: "Boots", link: "#", stock: 300 },
-      { title: "Business", link: "#", stock: 300 },
+      { title: "Formal", link: "#", stock: 300 },
       { title: "Sandals & Slippers", link: "#", stock: 300 },
       { title: "Shoe Accessories", link: "#", stock: 300 },
     ],

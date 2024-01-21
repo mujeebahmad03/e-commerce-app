@@ -17,8 +17,10 @@ const BlogListCard = ({ imgSrc, blog, category, metaData }) => {
           {category.title}
         </a>
 
-        <h3 className="blog-list-title">
-          <a href={blog.link}>{blog.title}.</a>
+        <h3>
+          <a href={blog.link} className="blog-list-title">
+            {blog.title}.
+          </a>
         </h3>
 
         <p className="blog-list-meta">
