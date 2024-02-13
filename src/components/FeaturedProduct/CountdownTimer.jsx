@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 
 const CountdownTimer = () => {
-  const targetDate = useMemo(() => new Date("2024-01-31T00:00:00"), []);
+  const targetDate = useMemo(() => new Date("2024-02-31T00:00:00"), []);
 
   const calculateTimeLeft = useCallback(() => {
     const difference = targetDate - new Date();
